@@ -1,0 +1,1 @@
+[![Build and Push Docker Image](https://github.com/NjiAriane/talent-forge-devops/actions/workflows/deploy.yml/badge.svg)](https://github.com/NjiAriane/talent-forge-devops/actions/workflows/deploy.yml)
