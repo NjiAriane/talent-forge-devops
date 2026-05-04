@@ -1,0 +1,23 @@
+name: PR Build Check
+
+on:
+  pull_request:
+    branches: [main]
+
+jobs:
+  build-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Build Docker image (test only, no push)
+        run: docker build -t myapp-test .
+
+      - name: Verify container starts
+        run: |
+          docker run -d -p 8080:80 --name test-container myapp-test
+          sleep 3
+          curl --fail http://localhost:8080 || exit 1
+          docker stop test-container
