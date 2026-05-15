@@ -1,4 +1,4 @@
-# 🚀 Talent Forge DevOps Project
+# Talent Forge DevOps Project
 ### Dockerized Application with CI/CD Pipeline
 
 **By NJI MENYONGA ARIANE RUTH**  
@@ -6,15 +6,15 @@
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 Talent Forge DevOps is a containerized web application demonstrating a complete, end-to-end DevOps workflow. Every code push triggers a fully automated chain — Docker build, image publish, and live deployment — with zero manual steps.
 
 | Resource | URL |
 |----------|-----|
-| 🐙 GitHub Repository | https://github.com/NjiAriane/talent-forge-devops |
-| 🐳 Docker Hub Image | https://hub.docker.com/r/ariana1/myapp |
-| 🌐 Live Application | https://talent-forge-devops.onrender.com |
+|  GitHub Repository | https://github.com/NjiAriane/talent-forge-devops |
+|  Docker Hub Image | https://hub.docker.com/r/ariana1/myapp |
+|  Live Application | https://talent-forge-devops.onrender.com |
 
 ### Key Learning Outcomes
 - Practical CI/CD implementation from code push to live deployment
@@ -24,28 +24,28 @@ Talent Forge DevOps is a containerized web application demonstrating a complete,
 
 ---
 
-## 🏗️ System Architecture
+## System Architecture
 
 The system is composed of five integrated services working together in a continuous pipeline.
-💻  Developer
+  Developer
 Edits code locally
 ↓
-🐙  GitHub Repository
+  GitHub Repository
 git push to main branch
 ↓
-⚡  GitHub Actions CI
+  GitHub Actions CI
 Workflow triggered — builds Docker image
 ↓
-📦  Docker Hub
+  Docker Hub
 Built image pushed to ariana1/myapp
 ↓
-🚀  Render
+  Render
 Pulls latest image & redeploys automatically
 ↓
-🌐  Live Web App
+  Live Web App
 talent-forge-devops.onrender.com
 ↓
-🔔  UptimeRobot
+  UptimeRobot
 Monitors availability — alerts on downtime
 
 | Layer | Tool | Responsibility |
@@ -58,7 +58,7 @@ Monitors availability — alerts on downtime
 
 ---
 
-## 🛠️ Technology Stack
+## ️ Technology Stack
 
 | Technology | Tier | Purpose |
 |------------|------|---------|
@@ -71,7 +71,7 @@ Monitors availability — alerts on downtime
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 talent-forge-devops/
 ├── .github/workflows/
 │   └── deploy.yml             # GitHub Actions CI/CD workflow
@@ -85,7 +85,7 @@ The app is a static two-page website (`index.html` and `about.html`) served from
 
 ---
 
-## ⚙️ CI/CD Pipeline
+## ️ CI/CD Pipeline
 
 | Step | Action | Description |
 |------|--------|-------------|
